@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Q&A</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Movie & TV Show Q&A</h1>
+        <form id="searchForm">
+            <input type="text" id="searchBar" placeholder="Search for articles..." required>
+            <button type="submit">Search</button>
+        </form>
+    </header>
 
+    <main>
+        <section id="articles">
+            <!-- Articles will be listed here -->
+            <h2>Popular Articles</h2>
+            <article>
+                <h3>What Happened to X Character in Y Show?</h3>
+                <p>This article discusses the events surrounding the character...</p>
+                <a href="#">Read more</a>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+    </main>
+
+    <section id="comments">
+        <h2>Comments</h2>
+        <form id="commentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+            
+            <button type="submit">Post Comment</button>
+        </form>
+
+        <div id="commentList">
+            <h3>User Comments</h3>
+            <!-- Display user comments here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Movie & TV Show Q&A</p>
+    </footer>
+
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
